@@ -13,6 +13,14 @@
 		C280FB7A1586176E009E412F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C280FB781586176E009E412F /* Credits.rtf */; };
 		C280FB7D1586176E009E412F /* KSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C280FB7C1586176E009E412F /* KSAppDelegate.m */; };
 		C280FB801586176F009E412F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C280FB7E1586176F009E412F /* MainMenu.xib */; };
+		C280FB911586177C009E412F /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = C280FB871586177C009E412F /* PTHotKey.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C280FB921586177C009E412F /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C280FB891586177C009E412F /* PTHotKeyCenter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C280FB931586177C009E412F /* PTKeyBroadcaster.m in Sources */ = {isa = PBXBuildFile; fileRef = C280FB8B1586177C009E412F /* PTKeyBroadcaster.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C280FB941586177C009E412F /* PTKeyCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = C280FB8C1586177C009E412F /* PTKeyCodes.plist */; };
+		C280FB951586177C009E412F /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = C280FB8E1586177C009E412F /* PTKeyCombo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C280FB961586177C009E412F /* PTKeyComboPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = C280FB901586177C009E412F /* PTKeyComboPanel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C280FB981586193A009E412F /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C280FB971586193A009E412F /* Carbon.framework */; };
+		C280FB9B15861FFF009E412F /* PTKeyComboPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = C280FB9A15861FFF009E412F /* PTKeyComboPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +29,27 @@
 		C280FB6C1586176E009E412F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C280FB6D1586176E009E412F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C280FB6E1586176E009E412F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C280FB711586176E009E412F /* PTHotKeyTest-Info.plist */ = {isa = PBXFileReference; path = "PTHotKeyTest-Info.plist"; sourceTree = "<group>"; };
+		C280FB711586176E009E412F /* PTHotKeyTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PTHotKeyTest-Info.plist"; sourceTree = "<group>"; };
 		C280FB731586176E009E412F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C280FB751586176E009E412F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C280FB771586176E009E412F /* PTHotKeyTest-Prefix.pch */ = {isa = PBXFileReference; path = "PTHotKeyTest-Prefix.pch"; sourceTree = "<group>"; };
+		C280FB771586176E009E412F /* PTHotKeyTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTHotKeyTest-Prefix.pch"; sourceTree = "<group>"; };
 		C280FB791586176E009E412F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C280FB7B1586176E009E412F /* KSAppDelegate.h */ = {isa = PBXFileReference; path = KSAppDelegate.h; sourceTree = "<group>"; };
+		C280FB7B1586176E009E412F /* KSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSAppDelegate.h; sourceTree = "<group>"; };
 		C280FB7C1586176E009E412F /* KSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSAppDelegate.m; sourceTree = "<group>"; };
 		C280FB7F1586176F009E412F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C280FB861586177C009E412F /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
+		C280FB871586177C009E412F /* PTHotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKey.m; sourceTree = "<group>"; };
+		C280FB881586177C009E412F /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyCenter.h; sourceTree = "<group>"; };
+		C280FB891586177C009E412F /* PTHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHotKeyCenter.m; sourceTree = "<group>"; };
+		C280FB8A1586177C009E412F /* PTKeyBroadcaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyBroadcaster.h; sourceTree = "<group>"; };
+		C280FB8B1586177C009E412F /* PTKeyBroadcaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyBroadcaster.m; sourceTree = "<group>"; };
+		C280FB8C1586177C009E412F /* PTKeyCodes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = PTKeyCodes.plist; sourceTree = "<group>"; };
+		C280FB8D1586177C009E412F /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
+		C280FB8E1586177C009E412F /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCombo.m; sourceTree = "<group>"; };
+		C280FB8F1586177C009E412F /* PTKeyComboPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyComboPanel.h; sourceTree = "<group>"; };
+		C280FB901586177C009E412F /* PTKeyComboPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyComboPanel.m; sourceTree = "<group>"; };
+		C280FB971586193A009E412F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		C280FB9A15861FFF009E412F /* PTKeyComboPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTKeyComboPanel.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C280FB981586193A009E412F /* Carbon.framework in Frameworks */,
 				C280FB6A1586176E009E412F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				C280FB691586176E009E412F /* Cocoa.framework */,
+				C280FB971586193A009E412F /* Carbon.framework */,
 				C280FB6B1586176E009E412F /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -85,6 +108,8 @@
 				C280FB7B1586176E009E412F /* KSAppDelegate.h */,
 				C280FB7C1586176E009E412F /* KSAppDelegate.m */,
 				C280FB7E1586176F009E412F /* MainMenu.xib */,
+				C280FB9A15861FFF009E412F /* PTKeyComboPanel.xib */,
+				C280FB9915861D39009E412F /* PTHotKey */,
 				C280FB701586176E009E412F /* Supporting Files */,
 			);
 			path = PTHotKeyTest;
@@ -100,6 +125,24 @@
 				C280FB781586176E009E412F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C280FB9915861D39009E412F /* PTHotKey */ = {
+			isa = PBXGroup;
+			children = (
+				C280FB861586177C009E412F /* PTHotKey.h */,
+				C280FB871586177C009E412F /* PTHotKey.m */,
+				C280FB881586177C009E412F /* PTHotKeyCenter.h */,
+				C280FB891586177C009E412F /* PTHotKeyCenter.m */,
+				C280FB8A1586177C009E412F /* PTKeyBroadcaster.h */,
+				C280FB8B1586177C009E412F /* PTKeyBroadcaster.m */,
+				C280FB8C1586177C009E412F /* PTKeyCodes.plist */,
+				C280FB8D1586177C009E412F /* PTKeyCombo.h */,
+				C280FB8E1586177C009E412F /* PTKeyCombo.m */,
+				C280FB8F1586177C009E412F /* PTKeyComboPanel.h */,
+				C280FB901586177C009E412F /* PTKeyComboPanel.m */,
+			);
+			name = PTHotKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +199,8 @@
 				C280FB741586176E009E412F /* InfoPlist.strings in Resources */,
 				C280FB7A1586176E009E412F /* Credits.rtf in Resources */,
 				C280FB801586176F009E412F /* MainMenu.xib in Resources */,
+				C280FB941586177C009E412F /* PTKeyCodes.plist in Resources */,
+				C280FB9B15861FFF009E412F /* PTKeyComboPanel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +213,11 @@
 			files = (
 				C280FB761586176E009E412F /* main.m in Sources */,
 				C280FB7D1586176E009E412F /* KSAppDelegate.m in Sources */,
+				C280FB911586177C009E412F /* PTHotKey.m in Sources */,
+				C280FB921586177C009E412F /* PTHotKeyCenter.m in Sources */,
+				C280FB931586177C009E412F /* PTKeyBroadcaster.m in Sources */,
+				C280FB951586177C009E412F /* PTKeyCombo.m in Sources */,
+				C280FB961586177C009E412F /* PTKeyComboPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +274,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -244,6 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -254,6 +306,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTHotKeyTest/PTHotKeyTest-Prefix.pch";
 				INFOPLIST_FILE = "PTHotKeyTest/PTHotKeyTest-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -265,6 +318,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTHotKeyTest/PTHotKeyTest-Prefix.pch";
 				INFOPLIST_FILE = "PTHotKeyTest/PTHotKeyTest-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +343,7 @@
 				C280FB851586176F009E412F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
