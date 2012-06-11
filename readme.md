@@ -1,7 +1,3 @@
-## What's this?
-
-This is a sandboxed and ARC enabled implementation of custom global hotkeys in objective-c.
-
 ## How to use
 
 Feel free to download and decode this project in order to implement it in your own projects. Or follow these loose instructions to configure it.
