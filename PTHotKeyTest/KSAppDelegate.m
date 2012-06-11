@@ -13,8 +13,8 @@
 
 @synthesize window = _window;
 
-static NSString *AppActivationKeyCodeKey = @"AppActivationKeyCode";
 NSString *HotKeyAppToFrontName = @"application to foreground";
+static NSString *AppActivationKeyCodeKey = @"AppActivationKeyCode";
 static NSString *AppActivationModifiersKey = @"AppActivationModifiers";
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification

@@ -50,6 +50,7 @@
 		C280FB901586177C009E412F /* PTKeyComboPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyComboPanel.m; sourceTree = "<group>"; };
 		C280FB971586193A009E412F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		C280FB9A15861FFF009E412F /* PTKeyComboPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTKeyComboPanel.xib; sourceTree = "<group>"; };
+		C280FBA115863802009E412F /* PTHotKeyTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PTHotKeyTest.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		C280FB6F1586176E009E412F /* PTHotKeyTest */ = {
 			isa = PBXGroup;
 			children = (
+				C280FBA115863802009E412F /* PTHotKeyTest.entitlements */,
 				C280FB7B1586176E009E412F /* KSAppDelegate.h */,
 				C280FB7C1586176E009E412F /* KSAppDelegate.m */,
 				C280FB7E1586176F009E412F /* MainMenu.xib */,
@@ -303,6 +305,7 @@
 		C280FB841586176F009E412F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PTHotKeyTest/PTHotKeyTest.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTHotKeyTest/PTHotKeyTest-Prefix.pch";
 				INFOPLIST_FILE = "PTHotKeyTest/PTHotKeyTest-Info.plist";
@@ -315,6 +318,7 @@
 		C280FB851586176F009E412F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PTHotKeyTest/PTHotKeyTest.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PTHotKeyTest/PTHotKeyTest-Prefix.pch";
 				INFOPLIST_FILE = "PTHotKeyTest/PTHotKeyTest-Info.plist";
