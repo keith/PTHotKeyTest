@@ -19,8 +19,14 @@ static NSString *AppActivationModifiersKey = @"AppActivationModifiers";
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self registerAppActivationKeystrokeWithTarget:self selector:@selector(toggleNVActivation:)];
+    [self registerAppActivationKeystrokeWithTarget:self selector:@selector(toggle:)];
     [appShortcutField setStringValue:[[self appActivationKeyCombo] description]];
+}
+
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag {
+    [NSApp activateIgnoringOtherApps:YES];
+    [_window makeKeyAndOrderFront:nil];
+    return YES;
 }
 
 - (IBAction)setAppShortcut:(id)sender {
@@ -33,14 +39,14 @@ static NSString *AppActivationModifiersKey = @"AppActivationModifiers";
 	
 	[appShortcutField setStringValue:[[self appActivationKeyCombo] description]];
 
-	if (![self registerAppActivationKeystrokeWithTarget:[NSApp delegate] selector:@selector(toggleNVActivation:)]) {
+	if (![self registerAppActivationKeystrokeWithTarget:[NSApp delegate] selector:@selector(toggle:)]) {
 		[self setAppActivationKeyCombo:oldKeyCombo sender:self];
 		NSLog(@"reverting to old (hopefully working key combo");
 	}
 
 }
 
-- (IBAction)toggleNVActivation:(id)sender {
+- (IBAction)toggle:(id)sender {
     if ([_window isKeyWindow]) {
         [_window close];
     } else {

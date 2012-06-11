@@ -12,14 +12,12 @@
 #import "PTHotKeyCenter.h"
 #import "PTHotKey.h"
 
-//@class PTKeyCombo;
+//@class PTKeyCombo; // Not sure why these were used.
 //@class PTHotKey;
 
 @interface KSAppDelegate : NSObject <NSApplicationDelegate> {
     IBOutlet NSWindow *hotkey;
-    
     IBOutlet NSTextField *appShortcutField;
-    
     PTHotKey *appActivationHotKey;
     PTKeyCombo *appActivationKeyCombo;
 }
