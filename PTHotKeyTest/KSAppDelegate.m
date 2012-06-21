@@ -30,7 +30,7 @@ static NSString *AppActivationModifiersKey = @"AppActivationModifiers";
 }
 
 - (IBAction)setAppShortcut:(id)sender {
-	[[PTKeyComboPanel sharedPanel] showSheetForHotkey:[self appActivationHotKey] forWindow:_window modalDelegate:self]; // Change _window to the window you want the sheet to come down from
+	[[PTKeyComboPanel sharedPanel] showSheetForHotkey:[self appActivationHotKey] forWindow:[NSApp mainWindow] modalDelegate:self]; // Change [NSApp mainWindow] if you want to be more specific
 }
 
 - (void)keyComboPanelEnded:(PTKeyComboPanel*)panel {
